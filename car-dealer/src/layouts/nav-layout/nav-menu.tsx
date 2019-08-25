@@ -1,5 +1,4 @@
 import React from 'react';
-import './nav-menu.css';
 
 const NavMenu: React.FC = () => {
     return (

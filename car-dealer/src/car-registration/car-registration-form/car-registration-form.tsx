@@ -35,7 +35,7 @@ const CarRegistrationForm: React.FC = () => {
         <FieldGroup
             control={carForm}
             render={({ get, invalid }) => (
-                <form onSubmit={handleSubmit}>
+                <form>
 
                     <FieldControl
                         name="name"
@@ -74,7 +74,7 @@ const CarRegistrationForm: React.FC = () => {
                         <button className='btn btn-default-style' type="button" onClick={handleReset}>
                             Reset
                 </button>
-                        <button className='btn btn-custom-style ml-2' type="submit" disabled={invalid}>
+                        <button className='btn btn-submit ml-2' type="button" onClick={handleSubmit} disabled={invalid}>
                             Submit
                 </button>
                     </div>
