@@ -55,7 +55,7 @@ export default class Home extends React.Component {
             <div className='row'>
                 <div className="col-xs-12">
                     <div className="container">
-                        <div className="mt-5 d-flex">
+                        <div className="d-flex">
                             <div className="card rounded-0 card-dimensions">
                                 <div className="card-header header-background">
                                     <div className="row">
@@ -68,14 +68,16 @@ export default class Home extends React.Component {
                                     </div>
                                 </div>
                                 <div className="card-body">
-                                    <table className="table table-striped">
-                                        <thead className='thead-dark'>
-                                            <tr>{this.columns}</tr>
-                                        </thead>
-                                        <tbody>
-                                            {this.data}
-                                        </tbody>
-                                    </table>
+                                    <div className="table-responsive">
+                                        <table className="table table-striped">
+                                            <thead className='thead-dark'>
+                                                <tr>{this.columns}</tr>
+                                            </thead>
+                                            <tbody>
+                                                {this.data}
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>

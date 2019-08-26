@@ -6,8 +6,8 @@ const CarRegistration: React.FC = () => {
         <div className="row">
             <div className="col-xs-12">
                 <div className="container">
-                    <div className="d-flex mt-5">
-                        <div className="card rounded-0">
+                    <div className="d-flex">
+                        <div className="card rounded-0 card-dimensions">
                             <div className="card-header header-background">
                                 <div className="row">
                                     <div className="col-md-9">
