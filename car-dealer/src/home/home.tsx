@@ -1,20 +1,22 @@
 import React from 'react';
-
+import axios from 'axios';
 
 export default class Home extends React.Component {
-    list = [];
+    state = {
+        list: []
+    }
 
     columns = [
-        <th>Name</th>,
-        <th>Brand</th>,
-        <th>Motor</th>,
-        <th>Initial Price</th>,
-        <th>Total Price</th>,
-        <th>Available</th>
+        <th key='1'>Name</th>,
+        <th key='2'>Brand</th>,
+        <th key='3'>Motor</th>,
+        <th key='4'>Initial Price</th>,
+        <th key='5'>Total Price</th>,
+        <th key='6'>Available</th>
     ];
 
     data = [
-        <tr>
+        <tr key='1'>
             <td>Picanto</td>
             <td>Kia</td>
             <td>V4 2.0</td>
@@ -22,7 +24,7 @@ export default class Home extends React.Component {
             <td>380,000</td>
             <td>8</td>
         </tr>,
-        <tr>
+        <tr key='2'>
             <td>Lancer</td>
             <td>Mitsubishi</td>
             <td>V6 3.4</td>
@@ -30,7 +32,7 @@ export default class Home extends React.Component {
             <td>540,000</td>
             <td>3</td>
         </tr>,
-        <tr>
+        <tr key='3'>
             <td>Highlander</td>
             <td>Toyota</td>
             <td>V6 4.0</td>
@@ -41,13 +43,11 @@ export default class Home extends React.Component {
     ]
 
     componentDidMount() {
-        fetch('http://jsonplaceholder.typicode.com/todos')
-            .then(res => res.json())
-            .then((data) => {
-                this.list = data;
-                console.log(this.list)
+        axios.get('http://jsonplaceholder.typicode.com/todos')
+            .then(res => {
+                this.setState({list: res.data});
+                console.log(this.state.list);
             })
-            .catch(console.log)
     }
 
     render() {
