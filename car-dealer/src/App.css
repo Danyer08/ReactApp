@@ -1,0 +1,73 @@
+body {
+  font-family: 'Open Sans' !important
+}
+
+.body-content {
+  background-image: url("./assets/images/car-dealer-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item-style:hover {
+  color: #ebca88 !important;
+  font-weight: bold;
+}
+
+.header-background {
+  background: #343a40;
+  color: white;
+}
+
+.card-dimensions {
+  width: 100vw;
+}
+
+.btn-default-style {
+  background: white;
+  border-radius: 3px;
+  border-width: 2px;
+  color: gray;
+  border-color: gray;
+  font-weight: bold;
+}
+
+.btn-default-style:hover {
+  background: gray;
+  color: white;
+}
+
+.btn-custom-style {
+  background: white;
+  border-radius: 3px;
+  border-width: 2px;
+  color: #ebca88;
+  border-color: #ebca88;
+  font-weight: bold;
+}
+
+.btn-custom-style:hover {
+  background: #ebca88;
+  color: white;
+}
+
+.required {
+  color: red;
+}
+
+.btn-submit {
+  background: white;
+  border-radius: 3px;
+  border-width: 2px;
+  color: #36d646;
+  border-color: #36d646;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background: #36d646;
+  color: white;
+}
